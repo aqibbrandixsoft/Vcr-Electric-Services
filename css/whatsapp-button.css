@@ -85,10 +85,3 @@
     transform: scale(1.08);
     box-shadow: 0 6px 24px rgba(18, 140, 126, 0.5);
 }
-
-/* ===== Hide on mobile ONLY ===== */
-@media (max-width: 768px) {
-    .sticky-wa-wrapper {
-        display: none !important;
-    }
-}
