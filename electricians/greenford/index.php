@@ -22,7 +22,6 @@ $form_status = vcr_handle_form_submission();
     <meta name="publisher" content="VCR Electrical Services">
 
 
-
     <!-- Google Web Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,8 +82,6 @@ $form_status = vcr_handle_form_submission();
             margin-bottom: 8px;
         }
 
-
-
         * {
 
             margin: 0;
@@ -94,8 +91,6 @@ $form_status = vcr_handle_form_submission();
             box-sizing: border-box;
 
         }
-
-
 
         body {
 
@@ -108,8 +103,6 @@ $form_status = vcr_handle_form_submission();
             overflow-x: hidden;
 
         }
-
-
 
         .back-to-top {
 
@@ -132,8 +125,6 @@ $form_status = vcr_handle_form_submission();
             transition: all 0.3s ease;
 
         }
-
-
 
         .back-to-top:hover {
 
@@ -1290,8 +1281,6 @@ $form_status = vcr_handle_form_submission();
 <body>
 
 
-    <!-- Spinner Removed -->
-
     <!-- Wolt-Style Header Start -->
 
     <div class="vcr-header-wrapper">
@@ -1964,13 +1953,6 @@ $form_status = vcr_handle_form_submission();
         }
     </style>
 
-
-
-
-
-
-
-
     <!-- CTA Start -->
 
     <div class="container-fluid cta-section p-0">
@@ -2019,10 +2001,6 @@ $form_status = vcr_handle_form_submission();
     </div>
 
     <!-- CTA End -->
-
-
-
-
 
     <!-- Services Start -->
     <div class="container-fluid premium-services-section py-4"
@@ -4262,25 +4240,10 @@ $form_status = vcr_handle_form_submission();
             };
 
             spinner();
-
-
-
-
-
             // Initiate the wowjs
 
             new WOW().init();
-
-
-
-
-
             // Sticky Navbar removed as we use sticky-top on wrapper
-
-
-
-
-
             // Back to top button
 
             $(window).scroll(function () {
@@ -4374,9 +4337,6 @@ $form_status = vcr_handle_form_submission();
             });
 
 
-
-
-
             // Testimonial carousel
 
             $(".testimonial-carousel").owlCarousel({
@@ -4440,8 +4400,6 @@ $form_status = vcr_handle_form_submission();
                 }
 
             });
-
-
 
         })(jQuery);
 
