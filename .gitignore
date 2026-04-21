@@ -1,0 +1,19 @@
+# XAMPP/Local dev files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Cpanel/Specific
+.cpanel.yml
+
+# IDE files
+.vscode/
+.idea/
+.gemini/
+antigravity/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
