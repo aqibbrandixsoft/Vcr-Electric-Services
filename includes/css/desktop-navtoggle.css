@@ -1,0 +1,126 @@
+/* Theme 20 */
+#notification-bottom > a {
+    pointer-events: visible;
+}
+#container #navigation_can {
+    z-index: 1001;
+}
+#container #navigation {
+    max-width: 400px;
+    position: fixed!important; 
+}
+#container #navigation.closed {
+    visibility: hidden;
+}
+#container .js body[style*=hidden] #navigation {
+    z-index: 1002;
+}
+#container #navigation_can #nav-toggle {
+    display: block;
+    position: sticky!important;
+}
+#container #navigation.closed {
+    opacity: 0;
+}
+#container .js body[style*=hidden] #navigation {
+    z-index: 1002;
+}
+#container #navigation > ul {
+    overflow-x: hidden;
+    display: flex;
+    height: 100%;
+}
+#container #nav li {
+    margin-left: 0;
+    padding: 0;
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+#container #navigation.opened #nav {
+    padding: 3rem 3rem;
+}
+#container #nav > .nav_placeholder > ul:after {
+    display: none;
+}
+#container #nav > li {
+    height: auto;
+}
+#container #nav > li > ul {
+    position: sticky;
+    opacity: 1;
+    visibility: visible;
+    padding: 0!important;
+    box-shadow: none;
+    padding-top: .25rem!important;
+    background: transparent;
+}
+#container #navigation > ul > li > a {
+    text-align: left;
+}
+#container #nav li > ul > li > ul > li, #container #nav li > ul > li {
+    padding: 0;
+}
+body #container #navigation.opened + #nav-toggle {
+    margin-top: 0!important;
+    position: fixed!important;
+}
+#container #nav > li > ul a {
+    font-size: 18px;
+    font-weight: 400!important;
+    text-transform: capitalize;
+}
+#container #navigation a {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0;
+}
+#container #nav > .nav_placeholder > ul > li {
+    flex: 0 0 100%;
+    text-transform: capitalize;
+}
+#container #nav > li:hover > a:before {
+    width: 0%;
+}
+#container #nav .nav_drop:after {
+    display: none;
+}
+#container #nav > .nav_placeholder > ul > li:not(.nav_placeholder) > a:only-of-type:after {
+    display: none;
+}
+#container header #header_contact h4:first-child {
+    margin-left: 0;
+}
+body #container header #header_contact {
+    display: flex;
+    top: 32%;
+    background: transparent;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    z-index: -1;
+}
+#container header #header_contact:before {
+    box-shadow: none;
+}
+#container header #header_contact:after {
+    box-shadow: none;
+}
+#container header #header_contact h4 {
+    filter: invert(0);
+    flex-grow: 0;
+}
+#container header #header_contact h4 strong a[data-call]:after {
+    display: none;
+}
+#container header #header_contact h4 strong a {
+    align-items: center;
+    display: inline-block;
+    font-size: 15px;
+}
+#container header #header_contact h4 strong {
+    display: inline-block;
+    overflow: hidden;
+}
+#container #nav li ul li ul, #container #nav li ul li ul li ul {
+    background: transparent;
+}

@@ -1,0 +1,14 @@
+/* Theme 20 */
+#notification-bottom > a {
+    pointer-events: visible;
+}
+
+#container header #header_contact h4:first-child {
+    margin-left: 0;
+}
+
+@media(min-width: 40rem) {
+    body #container #navigation.opened + #nav-toggle {
+        margin-top: 0!important;
+    }
+}

@@ -1,0 +1,94 @@
+/* ===== Global Sticky WhatsApp Button ===== */
+.sticky-wa-wrapper {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    z-index: 99999;
+    /* Ultra high z-index */
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.sticky-wa-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    gap: 0;
+}
+
+/* "Chat on WhatsApp" pill label */
+.sticky-wa-label {
+    background: #25D366;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 13px 18px 13px 20px;
+    border-radius: 30px 0 0 30px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.18);
+    transition: background 0.3s ease;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+/* Circular WhatsApp icon */
+.sticky-wa-icon {
+    width: 52px;
+    height: 52px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Pulse ring animation */
+.sticky-wa-icon::before {
+    content: '';
+    position: absolute;
+    inset: -7px;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 211, 102, 0.5);
+    animation: waPulse 2s ease-out infinite;
+}
+
+@keyframes waPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    70% {
+        transform: scale(1.45);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+/* Hover states */
+.sticky-wa-link:hover .sticky-wa-label {
+    background: #128C7E;
+}
+
+.sticky-wa-link:hover .sticky-wa-icon {
+    background: #128C7E;
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(18, 140, 126, 0.5);
+}
+
+/* ===== Hide on mobile ONLY ===== */
+@media (max-width: 768px) {
+    .sticky-wa-wrapper {
+        display: none !important;
+    }
+}
