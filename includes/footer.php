@@ -1,10 +1,11 @@
     <!-- Footer Start -->
+    <?php $base = isset($base_path) ? $base_path : '/'; ?>
     <footer class="footer-section pt-5 pt-lg-5" style="background: #1a1a1a; color: #fff; position: relative; overflow: hidden;">
         <div class="container py-4">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 footer-col">
                     <a href="/" class="footer-logo-wrap d-flex align-items-center mb-4 text-decoration-none">
-                        <img src="/optimised/vcr-logo-update copy.png" alt="VCR Electric Services" style="height: 70px; object-fit: contain;">
+                        <img src="<?php echo $base; ?>optimised/vcr-logo-update copy.png" alt="VCR Electric Services" style="height: 70px; object-fit: contain;">
                     </a>
                     <p class="mb-4">Professional, reliable electrical services across London and surrounding areas.</p>
                 </div>
@@ -46,6 +47,6 @@
         })(jQuery);
     </script>
     
-    <script src="/js/whatsapp-button.js" defer></script>
+    <script src="<?php echo $base; ?>js/whatsapp-button.js" defer></script>
 </body>
 </html>
