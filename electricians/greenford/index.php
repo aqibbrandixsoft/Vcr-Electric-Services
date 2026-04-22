@@ -1328,7 +1328,7 @@ $form_status = vcr_handle_form_submission();
                             <li class="nav-item">
 
                                 <a class="nav-link nav-link-custom"
-                                    href="https://www.vcrelectricservices.uk/about.html">About Us</a>
+                                    href="/about-us.html">About Us</a>
 
                             </li>
 
