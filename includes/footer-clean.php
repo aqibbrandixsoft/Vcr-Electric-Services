@@ -1,6 +1,5 @@
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <?php $base = isset($base_path) ? $base_path : '/'; ?>
-    <!-- Footer Start -->
     <footer class="footer-section pt-5 pt-lg-5"
         style="background: #1a1a1a; color: #fff; position: relative; overflow: hidden;">
         <!-- Decorative Background Elements -->
@@ -10,7 +9,7 @@
         <div class="container py-0">
             <div class="row g-0 g-lg-5 pb-lg-3 pb-0">
                 <!-- Column 1: Logo & About -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp footer-col" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 footer-col">
                     <a href="/" class="footer-logo-wrap d-flex align-items-center mb-4 text-decoration-none">
                         <img src="/optimised/vcr-logo-update copy.png" alt="VCR Electric Services"
                             style="height: 70px; object-fit: contain;">
@@ -27,7 +26,7 @@
                 </div>
 
                 <!-- Column 2: Quick Links -->
-                <div class="col-lg-3 col-md-6 wow fadeInUp mt-6 footer-col" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 mt-6 footer-col">
                     <h4 class="footer-title mb-4">Quick Links</h4>
                     <ul class="list-unstyled footer-links">
                         <li><a href="/articles.html">+ Recent News</a></li>
@@ -39,7 +38,7 @@
                 </div>
 
                 <!-- Column 3: Contact Info -->
-                <div class="col-lg-5 col-md-6 wow fadeInUp footer-col" data-wow-delay="0.5s">
+                <div class="col-lg-5 col-md-6 footer-col">
                     <h4 class="footer-title mb-4">Contact Links</h4>
                     <div class="contact-details">
                         <div class="contact-item mb-lg-4 mb-1">
@@ -97,8 +96,13 @@
         </div>
     </footer>
 
+    <!-- Clean Footer Styles (No Conflicts) -->
     <style>
-        /* ── Titles ── */
+        /* Footer Styles - Scoped to prevent conflicts */
+        .footer-section {
+            margin-top: 0 !important;
+        }
+        
         .footer-title {
             color: #f4c430;
             font-weight: 700;
@@ -106,7 +110,6 @@
             letter-spacing: -0.5px;
         }
 
-        /* ── Social icons ── */
         .social-box {
             width: 45px;
             height: 45px;
@@ -126,7 +129,6 @@
             transform: translateY(-3px);
         }
 
-        /* ── Quick links ── */
         .footer-links li {
             margin-bottom: 12px;
         }
@@ -144,7 +146,6 @@
             padding-left: 5px;
         }
 
-        /* ── Contact items — always row layout ── */
         .contact-item {
             display: flex;
             flex-direction: row;
@@ -164,21 +165,18 @@
             flex: 1;
         }
 
-        /* ── About text ── */
         .footer-about-text {
             color: #aaa;
             line-height: 1.8;
             font-size: 15px;
         }
 
-        /* ── Copyright ── */
         .copyright-text {
             color: #fff;
             font-size: 14px;
             font-weight: 400;
         }
 
-        /* ── Decorative shapes ── */
         .footer-decor-2 {
             position: absolute;
             top: -50px;
@@ -200,188 +198,4 @@
             opacity: 0.1;
             pointer-events: none;
         }
-
-        /* ============================================================
-       TABLET  (max 991px)
-    ============================================================ */
-        @media (max-width: 991px) {
-
-            /* LEFT-aligned on tablet & mobile */
-            .footer-section {
-                text-align: left;
-            }
-
-            .footer-col {
-                margin-bottom: 20px;
-            }
-
-            /* Logo left */
-            .footer-logo-wrap {
-                justify-content: flex-start;
-            }
-
-            /* Social icons left */
-            .footer-social-wrap {
-                justify-content: flex-start;
-            }
-
-            /* Quick-links left */
-            .footer-links {
-                padding: 0;
-            }
-
-            /* Contact block left */
-            .contact-details {
-                display: block;
-                text-align: left;
-            }
-
-            /* Contact items as row (icon left, text right) */
-            .contact-item {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            .contact-icon {
-                margin-right: 14px;
-                margin-bottom: 0;
-            }
-
-            .copyright-text {
-                text-align: left;
-            }
-        }
-
-        /* ============================================================
-       LARGE PHONES  (max 767px)
-    ============================================================ */
-        @media (max-width: 767px) {
-            .footer-section {
-                padding-top: 40px !important;
-            }
-
-            .footer-col {
-                margin-bottom: 35px;
-            }
-
-            .footer-title {
-                font-size: 20px;
-            }
-
-            .footer-about-text {
-                font-size: 14px;
-            }
-
-            .footer-links a {
-                font-size: 15px;
-            }
-
-            .footer-bottom {
-                padding-top: 16px !important;
-                padding-bottom: 16px !important;
-            }
-
-            .copyright-text {
-                font-size: 13px;
-            }
-        }
-
-        /* ============================================================
-       MOBILE  (max 575px)
-    ============================================================ */
-        @media (max-width: 575px) {
-            .footer-section {
-                padding-top: 35px !important;
-            }
-
-            .footer-col {
-                margin-bottom: 10px;
-            }
-
-            .footer-title {
-                font-size: 18px;
-                margin-bottom: 16px !important;
-            }
-
-            .footer-about-text {
-                font-size: 13px;
-                line-height: 1.7;
-            }
-
-            .footer-links a {
-                font-size: 14px;
-            }
-
-            .footer-links li {
-                margin-bottom: 10px;
-            }
-
-            .social-box {
-                width: 40px;
-                height: 40px;
-            }
-
-            /* Shrink decorative shapes so they don't cause overflow */
-            .footer-decor-2 {
-                width: 180px;
-                height: 180px;
-                top: -30px;
-                right: -30px;
-            }
-
-            .bottom-accent-shape {
-                width: 140px;
-            }
-
-            .copyright-text {
-                font-size: 12px;
-                line-height: 1.6;
-            }
-        }
-
-        /* ============================================================
-       EXTRA SMALL  (max 360px)
-    ============================================================ */
-        @media (max-width: 360px) {
-            .footer-title {
-                font-size: 16px;
-            }
-
-            .footer-about-text,
-            .footer-links a {
-                font-size: 13px;
-            }
-
-            .social-box {
-                width: 36px;
-                height: 36px;
-                font-size: 13px;
-            }
-
-            .contact-icon {
-                font-size: 16px;
-            }
-        }
     </style>
-    <!-- Footer End -->
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    
-    <script>
-        new WOW().init();
-        (function ($) {
-            "use strict";
-            setTimeout(function () {
-                if ($('#spinner').length > 0) {
-                    $('#spinner').removeClass('show');
-                }
-            }, 1);
-        })(jQuery);
-    </script>
-    
-    <script src="<?php echo $base; ?>js/whatsapp-button.js" defer></script>
-</body>
-</html>

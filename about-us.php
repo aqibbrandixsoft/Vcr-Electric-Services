@@ -4,11 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Us | VOLT MASTER Engineering</title>
+    <meta name="robots" content="noindex, follow">
+    <title>About Us | VCR Electric Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <style>
         :root {
@@ -38,7 +44,7 @@
         }
 
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Noto Serif', serif;
             background: var(--white);
             color: var(--text-dark);
             overflow-x: hidden;
@@ -48,18 +54,15 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
-<body>
-
-<?php include 'includes/header-premium.php'; ?>
         .hero {
             background: var(--black);
-            min-height: 100vh;
+            min-height: 50vh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
-            padding-top: 72px;
+            padding-top: 50px;
         }
 
         .hero-bg {
@@ -78,16 +81,15 @@
             background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 50%, rgba(245, 161, 0, 0.08) 100%);
         }
 
-        /* Gold diagonal stripe */
+        /* Simple straight separator */
         .hero::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 120px;
-            background: var(--offwhite);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
+            height: 4px;
+            background: var(--gold);
         }
 
         .hero-content {
@@ -122,10 +124,10 @@
         }
 
         .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(64px, 10vw, 120px);
-            font-weight: 900;
-            line-height: 0.9;
+            font-family: 'Noto Serif', serif;
+            font-size: clamp(40px, 10vw, 50px);
+            font-weight: 700;
+            line-height: 50px;
             color: var(--white);
             letter-spacing: -0.02em;
             margin-bottom: 28px;
@@ -153,15 +155,15 @@
             margin: 0 auto;
         }
 
-        /* ── SECTION BASE ── */
         section {
             position: relative;
+            padding: 50px 0;
         }
 
         /* ── WHO WE ARE — LIGHT ── */
         .who-we-are {
             background: var(--offwhite);
-            padding: 120px 60px;
+            padding: 40px 40px;
         }
 
         .who-we-are::after {
@@ -170,9 +172,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 4px;
             background: var(--dark);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         .container {
@@ -205,10 +206,10 @@
         }
 
         .section-heading {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(36px, 4vw, 54px);
+            font-family: 'Noto Serif', serif;
+            font-size: 42px;
             font-weight: 700;
-            line-height: 1.1;
+            line-height: 50px;
             color: var(--text-dark);
             margin-bottom: 28px;
         }
@@ -223,8 +224,9 @@
         }
 
         .body-text {
-            font-size: 16px;
-            line-height: 1.85;
+            font-family: 'Noto Serif', serif;
+            font-size: 15px;
+            line-height: 27px;
             color: var(--text-muted);
             margin-bottom: 18px;
         }
@@ -308,7 +310,8 @@
 
         .img-frame img {
             width: 100%;
-            aspect-ratio: 4/5;
+            max-height: 100%;
+            height: 600px;
             object-fit: cover;
             display: block;
             position: relative;
@@ -334,10 +337,10 @@
         }
 
         .img-badge .num {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Noto Serif', serif;
             font-size: 42px;
-            font-weight: 900;
-            line-height: 1;
+            font-weight: 700;
+            line-height: 50px;
             display: block;
         }
 
@@ -354,7 +357,7 @@
         /* ── STATS — DARK ── */
         .stats-section {
             background: var(--dark);
-            padding: 120px 60px 100px;
+            padding: 30px 30px;
         }
 
         .stats-section::after {
@@ -363,15 +366,14 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 4px;
             background: var(--white);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
+            gap: 20px;
             text-align: center;
         }
 
@@ -392,11 +394,11 @@
         }
 
         .stat-num {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(48px, 5vw, 72px);
-            font-weight: 900;
+            font-family: 'Noto Serif', serif;
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 500;
             color: var(--gold);
-            line-height: 1;
+            line-height: 50px;
             display: block;
             margin-bottom: 10px;
         }
@@ -411,13 +413,13 @@
 
         .stats-intro {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 30px;
         }
 
         /* ── MISSION — LIGHT ── */
         .mission-section {
             background: var(--white);
-            padding: 120px 60px;
+            padding: 50px 60px;
         }
 
         .mission-section::after {
@@ -426,9 +428,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 4px;
             background: var(--black);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         .mission-img-wrap {
@@ -437,6 +438,8 @@
 
         .mission-img-wrap img {
             width: 100%;
+            max-height: 100%;
+            height: 600px;
             aspect-ratio: 1/1;
             object-fit: cover;
             display: block;
@@ -497,7 +500,7 @@
         /* ── TEAM — DARK ── */
         .team-section {
             background: var(--black);
-            padding: 130px 60px 120px;
+            padding: 50px 60px;
         }
 
         .team-section::after {
@@ -506,9 +509,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 4px;
             background: var(--offwhite);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         .section-header-center {
@@ -572,7 +574,7 @@
         }
 
         .team-name {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Noto Serif', serif;
             font-size: 22px;
             font-weight: 700;
             color: var(--white);
@@ -615,7 +617,7 @@
         /* ── VALUES — LIGHT ── */
         .values-section {
             background: var(--offwhite);
-            padding: 130px 60px 120px;
+            padding: 50px 60px;
         }
 
         .values-section::after {
@@ -624,9 +626,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 4px;
             background: var(--dark);
-            clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         .values-grid {
@@ -679,7 +680,7 @@
         }
 
         .value-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Noto Serif', serif;
             font-size: 22px;
             font-weight: 700;
             color: var(--text-dark);
@@ -695,7 +696,7 @@
         /* ── CTA — DARK ── */
         .cta-section {
             background: var(--dark);
-            padding: 140px 60px 120px;
+            padding: 50px 60px;
             text-align: center;
         }
 
@@ -728,11 +729,11 @@
         }
 
         .cta-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(40px, 5vw, 64px);
-            font-weight: 900;
+            font-family: 'Noto Serif', serif;
+            font-size: clamp(36px, 5vw, 46px);
+            font-weight: 700;
             color: var(--white);
-            line-height: 1.1;
+            line-height: 50px;
             margin-bottom: 20px;
         }
 
@@ -771,9 +772,9 @@
         }
 
         .footer-logo {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Noto Serif', serif;
             font-size: 22px;
-            font-weight: 900;
+            font-weight: 700;
             letter-spacing: 0.12em;
             color: var(--white);
             text-transform: uppercase;
@@ -1041,21 +1042,7 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <a class="logo" href="#">VOLT <span>MASTER</span></a>
-        <nav id="mainNav">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#" class="active">About Us</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
-            <a href="#" class="nav-cta">Get a Quote</a>
-        </nav>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </div>
-    </header>
+<?php include 'includes/header-template.php'; ?>
 
     <!-- HERO — BLACK -->
     <section class="hero">
@@ -1067,10 +1054,9 @@
                 <span class="sep">▶</span>
                 <span class="cur">About Us</span>
             </div>
-            <h1>About<em>Us</em></h1>
+            <h1>Lorem Ipsum</h1>
             <div class="hero-divider"></div>
-            <p class="hero-sub">25 years of mastery. Precision-engineered electrical solutions that power industries and
-                homes alike.</p>
+            <p class="hero-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </section>
 
@@ -1080,17 +1066,12 @@
             <div class="two-col">
                 <div class="reveal">
                     <span class="section-tag">About Us</span>
-                    <h2 class="section-heading">Who We <em>Are</em></h2>
-                    <p class="body-text">Volt Master Engineering represents the pinnacle of electrical mastery. Founded
-                        on the principles of precision, safety, and unwavering reliability, we have spent decades
-                        illuminating the industrial and residential landscapes of our city.</p>
-                    <p class="body-text">Our approach is clinical. We don't just fix wires — we engineer solutions that
-                        stand the test of time. Every project is handled with the meticulous care of a master craftsman,
-                        ensuring your electrical infrastructure is a silent, powerful backbone to your operations.</p>
-                    <p class="body-text">From complex industrial grid maintenance to sophisticated residential smart
-                        systems, our team brings a level of expertise that sets the gold standard in the industry.</p>
-                    <a class="btn-primary" href="#">Get a Quote <span class="material-symbols-outlined"
-                            style="font-size:18px;">arrow_forward</span></a>
+                    <h2 class="section-heading">Dolor Sit <em>Amet</em></h2>
+                    <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="body-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="body-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <a class="btn-primary" href="tel:+441234567890">Get a Quote <span class="material-symbols-outlined"
+                            style="font-size:18px;"></span></a>
                 </div>
                 <div class="img-frame reveal reveal-delay-2">
                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
@@ -1109,8 +1090,7 @@
         <div class="container">
             <div class="stats-intro reveal">
                 <span class="section-tag light">Our Numbers</span>
-                <h2 class="section-heading white" style="margin-top:16px; margin-bottom:0;">The <em>Results</em> Speak
-                </h2>
+                <h2 class="section-heading white" style="margin-top:16px; margin-bottom:0;">Consectetur <em>Adipiscing</em></h2>
             </div>
             <div class="stats-grid">
                 <div class="stat-item reveal reveal-delay-1">
@@ -1143,33 +1123,30 @@
                     <div class="mission-quote">
                         <span class="material-symbols-outlined icon"
                             style="font-variation-settings:'FILL' 1;">bolt</span>
-                        <p>"Engineering safety into every circuit, powering the future with reliability."</p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor."</p>
                     </div>
                 </div>
                 <div class="reveal reveal-delay-2">
                     <span class="section-tag">Our Mission</span>
-                    <h2 class="section-heading">Our <em>Mission</em></h2>
-                    <p class="body-text">Our mission is to redefine the standards of electrical engineering through
-                        uncompromising quality and innovative safety protocols. We strive to be the invisible force that
-                        powers progress while ensuring absolute peace of mind for every client.</p>
-                    <p class="body-text">We are dedicated to sustainable energy solutions and the implementation of
-                        next-generation electrical infrastructure that minimizes waste and maximizes efficiency.</p>
+                    <h2 class="section-heading">Sed Do <em>Eiusmod</em></h2>
+                    <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p class="body-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                     <ul class="checklist">
                         <li>
                             <span class="material-symbols-outlined">check_circle</span>
-                            Upholding absolute safety compliance
+                            Lorem ipsum dolor sit amet
                         </li>
                         <li>
                             <span class="material-symbols-outlined">check_circle</span>
-                            Delivering precise engineering mastery
+                            Consectetur adipiscing elit
                         </li>
                         <li>
                             <span class="material-symbols-outlined">check_circle</span>
-                            24/7 Emergency response excellence
+                            Sed do eiusmod tempor
                         </li>
                         <li>
                             <span class="material-symbols-outlined">check_circle</span>
-                            Sustainable, next-gen energy solutions
+                            Incididunt ut labore
                         </li>
                     </ul>
                 </div>
@@ -1182,7 +1159,7 @@
         <div class="container">
             <div class="section-header-center reveal">
                 <span class="section-tag light">The Experts</span>
-                <h2 class="section-heading white" style="margin-top:16px;">Meet Our <em>Team</em></h2>
+                <h2 class="section-heading white" style="margin-top:16px;">Incididunt <em>Labore</em></h2>
             </div>
             <div class="team-grid">
                 <div class="team-card reveal reveal-delay-1">
@@ -1228,79 +1205,8 @@
         </div>
     </section>
 
-    <!-- VALUES — LIGHT -->
-    <section class="values-section">
-        <div class="container">
-            <div class="section-header-center reveal" style="margin-bottom:0;">
-                <span class="section-tag">What We Stand For</span>
-                <h2 class="section-heading" style="margin-top:16px;">Our Core <em>Values</em></h2>
-            </div>
-            <div class="values-grid">
-                <div class="value-card reveal reveal-delay-1">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">shield</span></div>
-                    <div class="value-title">Safety First</div>
-                    <p class="value-desc">Every decision, every circuit, every installation begins and ends with one
-                        priority — the absolute safety of our clients and our team.</p>
-                </div>
-                <div class="value-card reveal reveal-delay-2">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">precision_manufacturing</span>
-                    </div>
-                    <div class="value-title">Engineering Precision</div>
-                    <p class="value-desc">We approach every project with clinical accuracy. No shortcuts, no compromises
-                        — just master-level craftsmanship on every job.</p>
-                </div>
-                <div class="value-card reveal reveal-delay-3">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">bolt</span></div>
-                    <div class="value-title">Rapid Response</div>
-                    <p class="value-desc">24/7 emergency availability. When power fails, we answer. Fast, decisive
-                        action when it matters most to our clients.</p>
-                </div>
-                <div class="value-card reveal reveal-delay-1">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">eco</span></div>
-                    <div class="value-title">Sustainability</div>
-                    <p class="value-desc">Forward-thinking solutions that minimize waste, reduce energy consumption, and
-                        build infrastructure for the next generation.</p>
-                </div>
-                <div class="value-card reveal reveal-delay-2">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">handshake</span></div>
-                    <div class="value-title">Client Partnership</div>
-                    <p class="value-desc">We build long-term relationships, not just electrical systems. Your peace of
-                        mind is our ongoing commitment.</p>
-                </div>
-                <div class="value-card reveal reveal-delay-3">
-                    <div class="value-icon"><span class="material-symbols-outlined"
-                            style="font-variation-settings:'FILL' 1; font-size:28px;">workspace_premium</span></div>
-                    <div class="value-title">Certified Excellence</div>
-                    <p class="value-desc">Every member of our team is fully certified and continuously trained on the
-                        latest industry standards and technologies.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA — DARK -->
-    <section class="cta-section">
-        <div class="cta-glow"></div>
-        <div class="cta-inner">
-            <div class="reveal">
-                <span class="section-tag light">Ready to Start?</span>
-                <h2 style="margin-top:20px;">Power Your <em>Future</em><br>With Us</h2>
-                <p>From emergency call-outs to full industrial installations, our certified team is ready to deliver
-                    precision electrical solutions that last.</p>
-                <div class="cta-btns">
-                    <a class="btn-primary" href="#">Get a Free Quote <span class="material-symbols-outlined"
-                            style="font-size:18px;">arrow_forward</span></a>
-                    <a class="btn-outline" href="#">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <?php include 'includes/footer-premium.php'; ?>
+
+
 </body>
 </html>
